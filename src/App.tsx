@@ -1,8 +1,8 @@
 import { Helmet } from 'react-helmet';
-import { ThemeProvider } from '@/hooks/ThemeProvider';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { routes } from '@/routes';
+import { ThemeProvider } from '@/hooks/ThemeProvider';
 import { AppConfig } from '@/config/app';
+import { routes } from '@/routes';
 import Layout from "@/components/Layout";
 
 const App = () => {
@@ -14,8 +14,8 @@ const App = () => {
             <Router>
                 <Layout>
                     <Routes>
-                        {routes.map((route, index) => (
-                            <Route path={route.path} element={route.page} key={index} />
+                        {routes.map((r, i) => (
+                            <Route path={r.path} element={r.page} key={i} />
                         ))}
                     </Routes>
                 </Layout>
