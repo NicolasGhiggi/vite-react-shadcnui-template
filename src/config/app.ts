@@ -89,6 +89,5 @@ export const AppConfig = {
     | are secure. You should do this prior to deploying the application.
     |
     */
-
     key: env('APP_KEY'),
 }
