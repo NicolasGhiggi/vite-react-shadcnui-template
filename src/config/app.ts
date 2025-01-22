@@ -25,7 +25,6 @@ export const AppConfig = {
     */
     env: env('APP_ENV', 'production'),
 
-
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
@@ -72,7 +71,6 @@ export const AppConfig = {
     | set to any locale for which you plan to have translation strings.
     |
     */
-
     locale: env('APP_LOCALE', 'en'),
 
     fallback_locale: env('APP_FALLBACK_LOCALE', 'en'),
